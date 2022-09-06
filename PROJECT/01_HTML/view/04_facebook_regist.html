@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <!-- 메타 정보 -->
+      <meta charset="utf-8" />
+      <meta name="referrer" content="origin-when-crossorigin" id="meta_referrer"/>
+      <meta property="og:site_name" content="Facebook"/>
+      <meta property="og:url" content="https://ko-kr.facebook.com/"/>
+      <meta property="og:image" content="https://www.facebook.com/images/fb_icon_325x325.png"/>
+      <meta property="og:locale" content="ko_KR"/>
+      <meta name="description" content="Facebook에 로그인하세요. 친구, 가족, 지인들과 함께 하는 즐거운 Facebook 생활이 시작됩니다."/>
+      
+      <!-- 링크 -->
+      <link rel="alternate" media="only screen and (max-width: 640px)" href="https://m.facebook.com/"/>
+      <link rel="shortcut icon" href="https://static.xx.fbcdn.net/rsrc.php/yb/r/hLRJ1GG_y0J.ico"/>
+      <!-- 제목 : 상단 탭에 표시 됨 -->   
+      <title id="pageTitle">register page</title>
+</head>
+<body>
+    <!-- top text -->
+    <div>
+        <div><img src="../resource/img/facebook-logo.svg" width="240px" alt=""></div>
+        <div>
+            <div>
+                <div>새 계정 만들기</div>
+                <div>빠르고 쉽습니다.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- register form -->
+   <form action="" method="post">
+        <!-- name -->
+        <div>
+            <div>성</div>
+            <input type="text" name="last-name">
+        </div>
+        <div>
+            <div>이름(성은 제외)</div>
+            <input type="text" name="first-name">
+        </div>
+        <!-- id & pw -->
+        <div>
+            <div>휴대폰 번호 또는 이메일</div>
+            <input type="text" name="reg_email">
+        </div>
+        <div>
+            <div>새 비밀번호</div>
+            <input type="password" name="reg_password">
+        </div>
+        <!-- 기타 정보 입력란  -->
+        <div>
+            생일
+            <a href="#" title="더 자세한 정보를 원하시면 여기를 클릭하세요"></a>
+            <i class="as fa-solid fa-circle-exclamation"></i>
+        </div>
+        <div>
+            <select name="birthday_year" title="연도">
+                <option value="2012">2012</option>
+                <option value="2011">2011</option>
+                <option value="2010">2010</option>
+                <option value="2009">2009</option>
+                <option value="2008">2008</option>
+                <option value="2007">2007</option>
+                <option value="2006">2006</option>
+                <option value="2005">2005</option>
+                <option value="2004">2004</option>
+                <option value="2003">2003</option>
+                <option value="2002">2002</option>
+                <option value="2001">2001</option>
+                <option value="2000">2000</option>
+                <option value="1999">1999</option>
+                <option value="1998">1998</option>
+                <option value="1997">1997</option>
+                <option value="1996">1996</option>
+                <option value="1995">1995</option>
+                <option value="1994">1994</option>
+                <option value="1993">1993</option>
+                <option value="1992">1992</option>
+                <option value="1991">1991</option>
+                <option value="1990">1990</option>
+            </select>
+            <select name="birthday_month" title="월">
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option>
+                <option value="08">08</option>
+                <option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+            <select name="birthday_" title="일">
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option>
+                <option value="08">08</option>
+                <option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+            </select>
+        </div>
+        <div>
+            <div>연령</div>
+            <div>
+                <div>회원 님의 연령</div>
+                <input type="text" name="birthday_age" />
+            </div>
+            <a href="#" role="button">생년월일 사용</a>
+        </div>
+        <div>
+            <!-- a title은 성별 옆 물음표 아이콘을 위한 작업 / 테크닉이 필요한 부분이라 후작업 진행하진 않을 예정 -->
+            <div>
+                성별
+                <a href="#" title="자세한 정보를 보려면 여기를 클릭하세요.">
+                    <i class="fas fa-solid fa-circle-question"></i>
+                </a>
+            </div>
+            <!-- 성별 선택 -->
+            <span>
+                <span>
+                    <label for="rdo-1">여성</label>
+                    <input type="radio" id="rdo-1" name="sex" value="1">
+                </span>
+                <span>
+                    <label for="rdo-2">남성</label>
+                    <input type="radio" id="rdo-2" name="sex" value="2">
+                </span>
+                <span>
+                    <label for="rdo-3">개인지정</label>
+                    <input type="radio" id="rdo-3" name="sex" value="3">
+                </span>
+            </span>
+        </div>
+        <div>
+            <div>
+                <select name="preferred_pronoun" id="">
+                    <option value="" disabled selected>회원 님을 어떻게 지칭할지 선택하세요.</option>
+                    <option value="1">여성(She) : "생일을 축하해주세요!"</option>
+                    <option value="2">남성(He) : "생일을 축하해주세요!"</option>
+                    <option value="3">성별무관(They) : "생일을 축하해주세요!"</option>
+                </select>
+            </div>
+            <div>선택한 항목이 모든 사람에게 공개됩니다.</div>
+        </div>
+        <!-- 가입하기 버튼 -->
+        <div>
+            <button type="submit" name="websubmit">가입하기</button>
+        </div>
+        <div>
+            <a href="../view/01_facebook_index.html">이미 계정이 있으신가요?</a>
+        </div>
+   </form>
+</body>
+</html>

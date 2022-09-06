@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box model</title>
+</head>
+<body>
+    <div style="background: rgb(255,255,150);">
+        <div class="div-a">DIV tag은 width가 100%인 속성을 갖는다.</div>
+    </div>
+    <div style="background: rgb(196, 255, 177);">
+        <span class="span-a">SPAN A</span>
+        <span class="span-a">SPAN B</span>
+        <span class="span-a">SPAN C</span>
+    </div>
+</body>
+<style>
+
+    /* class 속성 */
+    .div-a {
+        width: 200px; height: 100px;
+        background-color: rgb(235, 235, 235);
+        border: 10px solid rgb(0, 0, 255);
+    }
+    .span-a {
+        /* span의 기본 속성 : inline. 따라서 width, height 값이 무시된다. */
+        width: 300px; height: 300px;
+        background-color: rgb(255, 177, 190);
+        border-radius: 10px; border-width: 5px; border-style: dashed; border-top-color: red; border-bottom-width: 5px;
+    }
+</style>
+</html>

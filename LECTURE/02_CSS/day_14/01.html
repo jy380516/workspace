@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+</head>
+<body>
+    <h2>display 속성</h2>
+
+    <p>flex</p>
+    <div class="container flex">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+    <div class="container flex">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+
+    <p>inline-flex</p>
+    <div class="container inline-flex">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+    <div class="container inline-flex">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+</body>
+</html>
+<style>
+    /* basic CSS */
+    div {
+        display: block;
+        margin: 2px;
+        background-color: rgb(200, 200, 200);
+        border: 1px dotted rgb(48, 48, 48);
+    }
+
+    .container {
+        width: 300px;
+    }
+    .item {
+        width: 50px; height: 50px;
+        background-color: yellow;
+    }
+
+    /* flex */
+    .flex {
+        display: flex;
+        height: 100px;
+    }
+
+    /* inline-flex */
+    .inline-flex {
+        display: inline-flex;
+        height: 100px;
+    }
+</style>

@@ -1,0 +1,21 @@
+@media (max-width:800px) {
+
+    /* reset CSS */
+    * {margin: 0; padding: 0;}
+    body {overflow-x: hidden; background: white;}
+
+    /* basic CSS */
+
+    /* card design */
+    .card-box {box-shadow: none;}
+    .card-box .head {border-bottom: 0;}
+    .card-box .body td div {font-size: 14px;}
+    .card-box .body .in-box {font-size: 14px;}
+    /*  for UX > 버튼들이 엄지로 누르기 쉽도록 아래에 고정. 핸드폰 길이에 구애받지 않도록.  */
+    .card-box .foot {
+        position: absolute; bottom: 0; right: 0;
+        border-top: 0;
+    }
+
+
+}

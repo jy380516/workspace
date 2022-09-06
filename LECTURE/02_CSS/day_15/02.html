@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-grow : row</title>
+</head>
+<body>
+    <h2>flex-grow : row</h2>
+    <div class="container" style="flex-direction: row;">
+        <div class="item" style="flex-grow: 1; width: auto;">flex-grow : 1</div>
+        <div class="item" style="flex-grow: 1; width: auto;">flex-grow : 1</div>
+        <div class="item" style="flex-grow: 1; width: auto;">flex-grow : 1</div>
+    </div>
+    <div class="container" style="flex-direction: row;">
+        <div class="item" style="flex-grow: 1; width: auto;">flex-grow : 1</div>
+        <div class="item" style="flex-grow: 2; width: auto;">flex-grow : 2</div>
+        <div class="item" style="flex-grow: 3; width: auto;">flex-grow : 3</div>
+    </div>
+    <h2>flex-grow : column</h2>
+    <div class="container" style="flex-direction: column; height: 300px;">
+        <div class="item" style="flex-grow: 1;">flex-grow : 1</div>
+        <div class="item" style="flex-grow: 1;">flex-grow : 1</div>
+        <div class="item" style="flex-grow: 1;">flex-grow : 1</div>
+    </div>
+    <div class="container" style="flex-direction: column; height: 300px;">
+        <div class="item" style="flex-grow: 1;">flex-grow : 1</div>
+        <div class="item" style="flex-grow: 2;">flex-grow : 2</div>
+        <div class="item" style="flex-grow: 3;">flex-grow : 3</div>
+    </div>
+</body>
+</html>
+<style>
+    /* reset CSS */
+     * {font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+
+    /* basic CSS */
+    div {
+        margin: 2px;
+        border: 1px dotted black;
+        background-color: gray;
+    }
+
+
+
+    .container {
+        position: relative;
+        display: flex;
+        width: 600px; min-height: 80px;
+    }
+    .item {
+        width: 100px; height: 60px;
+        font-size: 14px;
+        background-color: yellow;
+    }
+</style>

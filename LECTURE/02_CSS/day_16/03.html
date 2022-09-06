@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Media Query</h3>
+    <div class="desktop">contents for <br> DESKTOP</div>
+    <div class="tablet">contnets for <br> TABLET</div>
+    <div class="mobile">contents for <br> MOBILE</div>
+</body>
+</html>
+<style>
+    /* reset CSS */
+    * {margin: 0; padding: 0; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+
+    /* basic CSS */
+    h3 {text-align: center; margin: 100px auto;}
+    div {
+        width: 200px; height: 200px;
+        margin: 30px auto; padding: 20px;
+        border: 1px solid gray; 
+        color: white; text-align: center;
+        background-color: black;
+    }
+    
+    /* desktop */
+    @media (min-width:1025px) {
+        .mobile, .tablet {display: none;}
+        .desktop {display: block;}
+    }
+        
+    /* tablet */
+    @media (min-width:769px) and (max-width:1024px) {
+        .desktop, .mobile {display: none;}
+        .tablet {background-color: blue;}
+    }
+
+    /* mobile */
+    @media (min-width:250px) and (max-width:768px) {
+        .desktop, .tablet {display: none;}
+        .mobile {background-color: red;}
+    }
+
+    /* display : none */
+    @media (max-width:249px) {
+        * {display: none;}
+    }
+</style>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display 속성</title>
+</head>
+<body>
+    <!-- 디스플레이 속성 -->
+    <h3>Display 속성</h3>
+
+    <div>
+        <span>SPAN 태그는 기본값이 inline이다.</span>
+        <p>P 태그의 기본값은 block이다.</p>
+        <p style="display: inline; width: 500px; height: 80px;">P 태그를 inline(width, height 무시)으로 만들어 보았다.</p>
+        <span style="display: block;">SOAN 태그를 block으로 바꿔보았다.</span>
+        <p style="display:inline-block; width:300px; height:80px;">P 태그에 style="display:inline-block; width:300px; height:80px;" 와 같은 스타일을 입혀보았다.</p>
+    </div>
+
+    <!-- position 속성 -->
+    <h3>Position 속성</h3>
+
+    <div style="width: 600px; height: 200px; position: absolute;">
+        <span style="position: relative; top: 10px; left: 10px;">relative(top/left)</span>
+        <span style="position: relative; bottom: 10px; right: 10px;">relative(bottom/right)</span>
+        <span style="position: absolute; top: 50px; left: 20px;">absolute(top/left)</span>
+        <span style="position: absolute; bottom: 50px; right: 20px;">absolute(bottom/right)</span>
+    </div>
+
+
+</body>
+<style>
+    p, span {
+        background-color: gray;
+        border: 1px dashed rgb(66, 45, 255);
+    }
+    div {
+        border: 1px dotted rgb(255, 100, 100);
+    }
+
+</style>
+</html>

@@ -1,0 +1,11 @@
+@media (max-width:800px) {
+    /* reset CSS */
+    * {margin: 0; padding: 0;}
+    /* basic CSS */
+    body {
+        overflow-x: hidden;
+        background-color: white;
+    }
+    .card {box-shadow: none;}
+    .card > .header {border-bottom: 0;}
+}

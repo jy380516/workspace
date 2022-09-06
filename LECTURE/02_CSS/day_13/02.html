@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가운데 정렬 | flex & grid</title>
+</head>
+<body>
+
+    <h2>horizontal</h2>
+    <h2>flex</h2>
+    <section class="flex-1"><div>{ display: flex; justify-content: center; }</div></section>
+    <h2>grid</h2>
+    <section class="grid-1"><div>{ display: grid; justify-content: center; }</div></section>
+
+    <h2>vertical</h2>
+    <h2>flex</h2>
+    <section class="flex-2"><div>{ display: flex; align-items: center; }</div></section>
+    <h2>grid</h2>
+    <section class="grid-2"><div>{ display: grid; align-items: center; }</div></section>
+
+    <h2>both</h2>
+    <h2>flex</h2>
+    <section class="flex-3"><div>{ display: flex; justify-content: center; align-items: center; }</div></section>
+    <h2>grid</h2>
+    <section class="grid-3"><div>{ display: grid; justify-content: center; align-items: center; }</div></section>
+
+
+</body>
+</html>
+<style>
+        /* reset CSS */
+        * {
+        margin: 0; padding: 0; 
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-align: center; word-break: keep-all;
+    }
+
+    /* basic CSS */
+    body {margin: 5px;}
+    section {
+        display: block; 
+        height: 200px; 
+        padding: 10px;
+        border-bottom: 1px dashed;
+    }
+    div {
+        width: 300px; height: 100px;
+        padding: 20px;
+        background-color: rgb(204, 204, 204);
+        border: 1px dotted rgb(48, 48, 48);
+    }
+    h2 {text-align: center; padding: 10px; border-bottom: 1px solid;}
+
+    /* flex */
+    .flex-1 {display: flex; justify-content: center;}
+    .flex-2 {display: flex; align-items: center;}
+    .flex-3 {display: flex; justify-content: center; align-items: center;}
+
+    /* grid */
+    .grid-1 {display: grid; justify-content: center;}
+    .grid-2 {display: grid; align-items: center;}
+    .grid-3 {display: grid; justify-content: center; align-items: center;}
+</style>

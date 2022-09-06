@@ -1,0 +1,50 @@
+<body>
+    <header>머리말</header>
+    <main>
+        <nav>
+            <div>
+                <span>home</span>
+                <span>e-mail</span>
+                <span>news</span>
+            </div>
+        </nav>
+        <section>
+            <article>1st article (blog posting)</article>
+            <article>2nd article (blog posting)</article>
+            <article>3rf article (blog posting)</article>
+        </section>
+        <aside>
+            <ul>
+                <li>side-bar menu 01</li>
+                <li>side-bar menu 02</li>
+                <li>side-bar menu 03</li>
+            </ul>
+        </aside>
+    </main>
+    <footer>
+        <p>바닥글</p>
+        <span>about company</span>
+        <span>address : Republic of Korea, Seoul</span>
+        <span>CEO : Gildong Hong</span>
+    </footer>
+</body>
+
+<!-- CSS 내용은 선생님이 미리 작성한 것을 긁어와 진행 -->
+<style>
+    header, footer, nav, section, article, aside { padding: 10px; }
+  
+    body { margin: 0; }
+    header { height: 40px; background: rgb(255, 181, 181); }
+    main { height: calc(100vh - 240px); background: rgb(255, 248, 188); padding: 2px; position: relative; }
+    footer { height: 200px; background: rgb(201, 223, 255); }
+  
+    header, main, footer {
+      border: 1px solid gray;
+      box-sizing: border-box;
+    }
+  
+    nav { border: 1px solid rgb(255, 86, 86); }
+    section { border: 1px solid rgb(117, 107, 255); height: calc(100% - 64px); width: calc(80% - 44px); }
+    aside { border: 1px solid rgb(0, 133, 22); height: calc(100% - 68px); width: calc(20%); position: absolute; top: 45px; right: 2; }
+    article { border: 1px solid rgb(233, 123, 255); height: calc(100% - 40px); width: calc(33.33333% - 26px); display: inline-block; }
+  </style>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align-self</title>
+</head>
+<body>
+    <h2>align-self : row</h2>
+    <div class="container" style="flex-direction: row; height: 300px;">
+        <div class="item stretch" style="align-self: stretch; height: auto;">stretch <br> auto height</div>
+        <div class="item flex-start" style="align-self: flex-start; height: auto;">flex-start <br> auto height</div>
+        <div class="item center" style="align-self: center; height: auto;">center <br> auto height</div>
+        <div class="item flex-end" style="align-self: flex-end; height: auto;">flex-end <br> auto height</div>
+    </div>
+    <h2>align-self : column</h2>
+    <div class="container" style="flex-direction: column;">
+        <div class="item stretch" style="align-self: stretch; width: auto;">stretch <br> auto width</div>
+        <div class="item flex-start" style="align-self: flex-start; width: auto;">flex-start <br> auto width</div>
+        <div class="item center" style="align-self: center; width: auto;">center <br> auto width</div>
+        <div class="item flex-end" style="align-self: flex-end; width: auto;">flex-end <br> auto width</div>
+    </div>
+</body>
+</html>
+<style>
+    /* reset CSS */
+     * {font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+
+    /* basic CSS */
+    div {
+        margin: 2px;
+        border: 1px dotted black;
+        background-color: gray;
+    }
+
+
+
+    .container {
+        position: relative;
+        display: flex;
+        width: 600px; min-height: 80px;
+    }
+    .item {
+        width: 100px; height: 60px;
+        font-size: 14px;
+        background-color: yellow;
+    }
+</style>

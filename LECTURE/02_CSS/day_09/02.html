@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table design</title>
+</head>
+<body>
+    <!-- HTML -->
+    <h1>basic design</h1>
+    <table class="table-a">
+        <colgroup>
+            <col width="100px" />
+            <col width="100px" />
+            <col width="300px" />
+            <col width="500px" />
+        </colgroup>
+        <!-- table head -->
+        <thead>
+            <tr>
+                <th>table name</th>
+                <th>age</th>
+                <th>phone number</th>
+                <th>address</th>
+            </tr>
+        </thead>
+        <!-- contents -->
+        <tbody>
+            <!-- 1st -->
+            <tr>
+                <td>Gildong Hong</td>
+                <td>21</td>
+                <td>010-1234-5678</td>
+                <td>서울시 강남구 역삼동 1</td>
+            </tr>
+            <!-- 2nd -->
+            <tr>
+                <td>Gildong Kim</td>
+                <td>22</td>
+                <td>010-1111-5678</td>
+                <td>서울시 강남구 역삼동 2</td>
+            </tr>
+            <!-- 3rd -->
+            <tr>
+                <td>Gildong Lee</td>
+                <td>23</td>
+                <td>010-1234-2222</td>
+                <td>서울시 강남구 역삼동 3</td>
+            </tr>
+            <!-- 4th -->
+            <tr>
+                <td>Gildong Jeon</td>
+                <td>24</td>
+                <td>010-3333-5678</td>
+                <td>서울시 강남구 역삼동 4</td>
+            </tr>
+            <!-- 5th -->
+            <tr>
+                <td>Gildong MA</td>
+                <td>25</td>
+                <td>010-1234-4444</td>
+                <td>서울시 강남구 역삼동 4</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- CSS -->
+    <h1>basic design</h1>
+    <table class="table-b">
+        <colgroup>
+            <col width="100px" />
+            <col width="100px" />
+            <col width="300px" />
+            <col width="500px" />
+        </colgroup>
+        <!-- table head -->
+        <thead>
+            <tr>
+                <th>table name</th>
+                <th>age</th>
+                <th>phone number</th>
+                <th>address</th>
+            </tr>
+        </thead>
+        <!-- contents -->
+        <tbody>
+            <!-- 1st -->
+            <tr>
+                <td>Gildong Hong</td>
+                <td>11</td>
+                <td>010-1234-5678</td>
+                <td class="t-addr">서울시 강남구 대치동 은마아파트 3</td>
+            </tr>
+            <!-- 2nd -->
+            <tr>
+                <td>Gildong Kim</td>
+                <td>12</td>
+                <td>010-1111-5678</td>
+                <td class="t-addr">서울시 송파구 잠실동 엘스아파트 121</td>
+            </tr>
+            <!-- 3rd -->
+            <tr>
+                <td>Gildong Lee</td>
+                <td>17</td>
+                <td>010-1234-2222</td>
+                <td class="t-addr">서울시 강남구 잠실동 엘스아파트 137동</td>
+            </tr>
+            <!-- 4th -->
+            <tr>
+                <td>Gildong Jeon</td>
+                <td>18</td>
+                <td>010-3333-5678</td>
+                <td class="t-addr">서울시 잠실동 엘스아파트 151동</td>
+            </tr>
+            <!-- 5th -->
+            <tr>
+                <td>Gildong MA</td>
+                <td>25</td>
+                <td>010-1234-4444</td>
+                <td class="t-addr">서울시 강남구 청담동 진흥파트 7</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+<style>
+    h1 {margin-top: 50px;}
+
+    /* table-b style */
+    .table-b {
+        width: fit-content; overflow: hidden;
+        display: block;
+        /* border-collapse: collapse; */ border-radius: 5px;
+    }
+    .table-b thead tr {
+        background-color: rgb(119, 119, 218); color: white;
+    }
+    .table-b td {border: none;}
+    .table-b tr {
+        text-align: center; line-height: 50px; color: rgb(50, 50, 50);
+        background-color: rgb(240, 240, 240);
+        border-bottom: 1px solid gray;
+    }
+    .table-b .t-addr {
+        padding-left: 10px;
+        text-align: left; text-decoration: underline; font-weight: 800;
+        color: #7a7aff;
+    }
+
+    /* 짝수 행(row)들만 배경 색상 바꿔보기 */
+    .table-b tr:nth-child(even) {background-color: rgb(213, 230, 255);}
+
+</style>
+</html>

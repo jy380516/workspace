@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background-attachment</title>
+</head>
+<body>
+    <h2>background-attachment</h2>
+    <section style=" width:900px; height: 600px;">
+        <div style="background-attachment: scroll">
+            <p>배경을 요소 자체에 고정</p>
+            <p>콘텐츠와 함께 스크롤 되지 않음</p>
+            <p>안녕하세요</p><p>프론트엔드</p><p>과정입니다.</p>
+            <p>안녕하세요</p><p>프론트엔드</p><p>과정입니다.</p>
+            <p>안녕하세요</p><p>프론트엔드</p><p>과정입니다.</p>
+        </div>
+        <div style="background-attachment: fixed">
+            <h2>fixed</h2>
+            <p>배경을 뷰포트에 고정</p>
+            <p>화면에 스크롤이 있어도 스크롤 안함</p>
+            <p>안녕하세요</p><p>프론트엔드</p><p>과정입니다.</p>
+            <p>안녕하세요</p><p>프론트엔드</p><p>과정입니다.</p>
+        </div>
+        <div style="background-attachment: local">
+            <h2>local</h2>
+            <p>배경을 콘텐츠에 고정</p>
+            <p>콘텐츠와 함께 배경도 스크롤됨</p>
+            <p>안녕하세요</p><p>프론트엔드</p><p>과정입니다.</p>
+            <p>안녕하세요</p><p>프론트엔드</p><p>과정입니다.</p>
+        </div>
+    </section>
+</body>
+</html>
+<style>
+    body { padding: 0; margin: 0; padding-bottom: 2000px; }
+    div {
+        width: 30%; height: 500px; 
+        display: inline-block; 
+        background: url(./img/day12-5.jpg) no-repeat; 
+        border: 1px solid gray; 
+        overflow: auto;
+        line-height: 80px; font-size: 18px;
+    }
+</style>

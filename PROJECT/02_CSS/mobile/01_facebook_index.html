@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" id="facebook">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook | index page</title>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/01_facebook_index.css">
+    <!-- 반응형 CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/11_facebook_index.css">
+</head>
+<body>
+    <div class="container-box">
+        <div class="logo-box">
+            <img src="../images/facebook-logo.svg" alt="facebook-logo" width="200px">
+            <h2>Facebook에서 전 세계에 있는 친구, 가족, 지인들과 함께 이야기를 나눠보세요.</h2>
+        </div><!-- 
+        --><div class="login-box">
+            <form action="./02_facebook_main.html" id="login-form" method="get">
+                <div><input type="text" class="input-email" name="email" id="email" placeholder="이메일 또는 전화번호"></div>
+                <div><input type="password" class="input-pass" name="password" id="password" placeholder="비밀번호"></div>
+                <div><button class="login-btn" name="login" type="submit">로그인</button></div>
+                <div><a href="./03_facebook_identify.html">비밀번호를 잊으셨나요?</a></div>
+                <div class="div-line"></div>
+                <div><a href="./04_facebook_regist.html" class="regist">새 계정 만들기</a></div>
+            </form>
+            <div class="new-page">유명인, 브랜드 또는 비즈니스를 위한 <a href="./05_facebook_create.html">페이지 만들기</a></div>
+        </div> <!-- login-box -->
+    </div> <!-- container-box -->
+</body>
+</html>

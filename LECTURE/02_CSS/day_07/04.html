@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position : relative | absolute</title>
+</head>
+<body>
+    <!-- relative & absolute -->
+    <h3>relative & absolute</h3>
+
+    <!-- relative -->
+    <!-- 기본 위치를 기준으로 상하좌우 상대적인 좌표로 배치 -->
+    <div style="position: relative;">
+        <!-- relative 속성이 적용된 상태에서는 top/left 등을 사용하기 보단 margin으로 위치를 잡아주도록 한다 -->
+        <span style="position: relative; left: 10px;">A</span>
+        <span style="position: relative; left: 10px;">B</span>
+        <span style="position: relative; left: 10px;">C</span>
+        <span style="position: relative; left: 10px; top: 50px;">D</span>
+        <span style="position: relative; left: 10px; top: 100px;">E</span>
+    </div>
+
+    <!-- absolute -->
+    <!-- 부모 자식 안에서 부모의 좌 상단을 기준으로 절대 좌표로 배치 -->
+    <div style="position: relative;">
+        <span style="position: absolute; left: 10px; opacity: .5;">가</span>
+        <span style="position: absolute; left: 35px; opacity: .5;">나</span>
+        <span style="position: absolute; left: 60px; opacity: .5;">다</span>
+    </div>
+</body>
+<style>
+    
+    div {
+        width: 400px; height: 400px;
+        margin-top: 30px;
+        border: 1px dotted green;
+    }
+
+    span {
+        display: inline-block;
+        width: 100px; height: 100px;
+        background-color: gray;
+        border: 1px dashed red; 
+    }
+
+</style>
+</html>

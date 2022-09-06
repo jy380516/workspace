@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>justify-content</title>
+</head>
+<body>
+    <h2>justify-content</h2>
+
+    <!-- 01. flex-start -->
+    <p>flex-start</p>
+    <div class="container flex-start">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+    </div>
+
+    <!-- 02. flex-end -->
+    <p>flex-end</p>
+    <div class="container flex-end">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+    </div>
+
+    <!-- 03. center -->
+    <p>center</p>
+    <div class="container center">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+    </div>
+
+    <!-- 04. space-between -->
+    <p>space-between</p>
+    <div class="container space-between">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+    </div>
+
+    <!-- 05. space-around -->
+    <p>space-around</p>
+    <div class="container space-around">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+    </div>
+</body>
+</html>
+<style>
+    /* reset CSS */
+
+    /* basic CSS */
+    div {background: gray; border: 1px dotted black; margin: 2px;}
+    .container {display: flex; width: 300px;}
+    .item {display: inline-block; width: 50px; height: 50px; background: yellow;}
+
+
+    /* justify-content */
+    .flex-start {justify-content: flex-start;}
+
+    .flex-end {justify-content: flex-end;}
+
+    .center {justify-content: center;}
+
+    .space-between {justify-content: space-between;}
+
+    .space-around {justify-content: space-around;}
+
+</style>

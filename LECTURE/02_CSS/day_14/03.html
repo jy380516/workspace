@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-wrap</title>
+</head>
+<body>
+    <h2>flex-wrap</h2>
+
+    <!-- 01. nowrap -->
+    <p>nowrap</p>
+    <div class="container nowrap">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+    </div>
+
+    <!-- 02. wrap -->
+    <p>wrap</p>
+    <div class="container wrap">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+    </div>
+
+    <!-- 03. wrap-reverse -->
+    <p>nowrap</p>
+    <div class="container wrap-reverse">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+    </div>
+
+</body>
+</html>
+<style>
+    /* reset CSS */
+
+    /* basic CSS */
+     div {background: gray; border: 1px dotted black; margin: 2px;}
+    .container {display: flex; width: 300px;}
+    .item {display: inline-block; width: 50px; height: 50px; background: yellow;}
+
+
+    /* flex-wrap */
+    .nowrap {
+        display: flex; flex-wrap: nowrap;
+        width: 200px;
+    }
+    .wrap {
+        display: flex; flex-wrap: wrap;
+        width: 200px;
+    }
+    .wrap-reverse {
+        display: flex; flex-wrap: wrap-reverse;
+        width: 200px;
+    }
+
+</style>

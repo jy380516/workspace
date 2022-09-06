@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>화면 중앙 배치</title>
+</head>
+<body>
+    <!-- center : horizontal -->
+    <h2>가로 기준 가운데 정렬 방법</h2>
+    <section><div class="div-h-1">margin left & right</div></section>
+    <section><div class="div-h-2">position & transform (박스 넓이 모를 경우)</div></section>
+    <section class="sec-3"><div class="div-h-3">text-align</div></section>
+
+    <!-- center : vertical -->
+    <h2>세로 기준 가운데 정렬 방법</h2>
+    <section><div class="div-v-1">top & margin-top(px) - 박스 높이를 알 경우</div></section>
+    <section><div class="div-v-3">top & margin-top(%) - 박스 높이를 알 경우</div></section>
+    <section><div class="div-v-2">position & transform - 박스 높이를 모를 경우</div></section>
+
+    <!-- center : both -->
+    <h2>가운데 정렬</h2>
+    <section><div class="div-hv-1">margin left % right</div></section>
+    <section><div class="div-hv-2">position & transform</div></section>
+</body>
+</html>
+<style>
+    /* reset CSS */
+    * {
+        margin: 0; padding: 0; 
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    /* basic CSS */
+    body {margin: 5px;}
+    section {
+        display: block; 
+        height: 200px; 
+        padding: 10px;
+        border-bottom: 1px dashed;
+    }
+    div {
+        width: 300px; height: 100px;
+        background-color: rgb(204, 204, 204);
+        border: 1px dotted rgb(48, 48, 48);
+    }
+    h2 {text-align: center; padding: 10px; border-bottom: 1px solid;}
+
+    /* horizontal align */
+    /* 01 */
+    .div-h-1 {margin-left: auto; margin-right: auto;}
+    /* 02 */
+    .div-h-2 {position: relative; left: 50%; transform: translateX(-50%);}
+    /* 03 */
+    .sec-3 {position: relative; text-align: center;}
+    .div-h-3 {display: inline-block;}
+
+    /* vertical align */
+    /* 01 */
+    .div-v-1 {position: relative; top: 50%; margin-top: -50px;}
+    .div-v-3 {position: relative; top: 50%; margin-top: -3%;}
+    /* 02 */
+    .div-v-2 {position: relative; top: 50%; transform: translateY(-50%);}
+
+    /* both */
+    .div-hv-1 {
+        position: relative; 
+        top: 50%; 
+        margin-top: -50px; margin-left: auto; margin-right: auto; 
+    }
+    .div-hv-2 {position: relative; top: 50%; left: 50%; transform: translate(-50%,-50%);}
+</style>

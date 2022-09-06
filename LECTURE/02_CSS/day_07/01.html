@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* 전체 선택자 */
+    * { padding: 0; color: gray;}
+
+
+    h1 {color: rgb(225, 142, 37);}
+    body p {color: red;}
+    .sel-class {color: cyan; font-style: italic;}
+
+    #sel-id {color: green;}
+
+    /* 자식 선택자 */
+    ul > li {color: blue;}
+
+
+</style>
+<body>
+    <h1>안녕하세요</h1>
+    <p> 프론트엔드 과정 소개</p>
+
+    <div>
+        <p class="sel-class">6월 개강</p>
+        <p class="sel-class">화목금</p>
+        <p id="sel-id">19:00 ~ 22:00</p>
+    </div>
+    <span id="sel-id">홍길동</span>
+
+    <div>
+        <ul>
+            <li>01. HTML</li>
+            <li>02. CSS</li>
+            <li>01. JS<L</li>
+        </ul>
+        <o1>
+            <li>04. React.js</li>
+            <li>05. Node.js</li>
+            <li>06. MySQL</li>
+        </o1>
+    </div>
+</body>
+</html>

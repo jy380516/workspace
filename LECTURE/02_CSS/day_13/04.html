@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyframe</title>
+</head>
+<body>
+    <div id="box" class="animate"></div>
+</body>
+</html>
+<style>
+    div {
+        width: 100px; height: 100px;
+        background-color: yellow;
+        border: 1px dotted gray;
+    }
+    .animate {
+        background-color: blue;
+        animation: movebox 1s ease forwards;
+    }
+
+    @keyframes movebox {
+        from {transform: scale(.5);}
+        to {transform: scale(1.3) translate(300px, 300px) rotate(180deg);}
+    }
+</style>    

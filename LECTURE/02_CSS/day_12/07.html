@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+</head>
+<body>
+    <section class="s1">
+        <h2>basic DIV</h2>
+        <div>A</div>
+        <div>B</div>
+    </section>
+    <section>
+        <h2>float: left </h2>
+        <div class="div-float left">A</div>
+        <div class="div-float left">B</div>
+    </section>
+    <section>
+        <h2>float: right </h2>
+        <div class="div-float right">A</div>
+        <div class="div-float right">B</div>
+    </section>
+    <section class="s1">
+        <h2>clear: both</h2>
+        <div class="left both">A</div>
+        <div class="right both">B</div>
+    </section>
+</body>
+</html>
+<style>
+    * {padding: 0; margin: 0;}
+    section {
+        display: block; 
+        height: 160px; 
+        padding: 10px;
+        border-bottom: 1px dashed; 
+    }
+    div {
+        width: 100px; height: 100px;
+        font-size: 30px;
+        border: 1px dotted rgb(48, 48, 48);
+        background-color: rgb(204, 204, 204);
+    }
+
+    .s1 {height: 300px;}
+    .left {float: left;}
+    .right {float: right;}
+    .both {clear: both;}
+</style>

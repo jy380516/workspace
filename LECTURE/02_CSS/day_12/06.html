@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background-clip</title>
+</head>
+<body>
+    <h2>background-clip</h2>
+    <div style="background-clip: border-box;">border-box</div>
+    <div style="background-clip: padding-box;">padding-box</div>
+    <div style="background-clip: content-box;">content-box</div>
+</body>
+</html>
+<style>
+    body {text-align: center; font-weight: bold; color: white;}
+    h2 {color: black;}
+    div {
+        width: 360px; height: 200px; 
+        display: inline-block;
+        margin: 20px 0 0 30px; padding: 20px; 
+        background-color: rgb(147, 158, 255); 
+        border: 10px dotted gray;
+    }
+</style>

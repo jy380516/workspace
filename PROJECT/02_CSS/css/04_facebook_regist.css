@@ -1,0 +1,68 @@
+    /* reset CSS */
+    * { padding: 0; margin: 0; font-size: 0; }
+    body {background-color: #f0f2f5;}
+
+    /* container : 중앙정렬 */
+    .container { width: 420px; margin: 0 auto; }
+
+    /* logo */
+    .logo { margin-top: 10px; text-align: center; }
+    .logo img {height: 100px;}
+
+    /* card - bg & shadow */
+    .card {
+        position: relative;
+        align-items: center;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+        box-sizing: border-box;
+    }
+    /* form : basic set-up */
+    input, select, .in-rdo {
+        margin: 5px 2px; padding: 10px;
+        color: #1c1e21; font-size: 15px; line-height: 16px;
+        border: 1px solid #ccd0d5; border-radius: 5px; outline: none !important;
+    }
+    .header {
+        padding: 10px; margin-top: 10px;
+        border-bottom: 1px solid #ccd0d5;
+    }
+    .header .title {
+        font-size: 25px; line-height: 32px; text-align: center;
+    }
+    .header .subject {
+        margin-bottom: 12px;
+        color: #606770; font-size: 15px; line-height: 24px; text-align: center;
+    }
+    .body {padding: 20px;}
+    .in-name > div {
+        width: calc(50% - 4px);
+        margin: 0 2px;
+        display: inline-block;
+    }
+    .in-name > input, .in-info > input { width: 100%; box-sizing: border-box; }
+    .in-info > div { width: calc(100% - 4px); display: block; }
+    .in-age select, .in-type .in-rdo {
+        width: calc(100%/3 - 4px); height: 36px;
+        display: inline-block;
+        padding: 5px 10px;
+        box-sizing: border-box;
+    }
+    .text {
+        margin-top: 10px;
+        color: #606770; font-size: 12px; font-weight: normal; line-height: 20px;
+    }
+    .in-rdo > label {font-size: 16px;}
+    .guide {color: #777; font-size: 11px;}
+    .regist, .login { margin: 15px 0; text-align: center; }
+    button {
+        width: 200px; height: 36px;
+        padding: 0 32px; margin-top: 20px;
+        background: #00a400; 
+        color: #fff; font-size: 18px; font-weight: 600;
+        border: none; border-radius: 6px; 
+    }
+    .login > a {
+        font-size: 16px; color: #1877f2; text-decoration: unset /* none */;
+    }

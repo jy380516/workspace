@@ -1,0 +1,61 @@
+  
+  /* reset CSS */
+  * { padding: 0; margin: 0; }
+  body {background: #f0f2f5; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+
+  /* header - logo */
+  .logo-box {
+    padding-top: 5px;
+    text-align: left;
+    background-color: white;
+    box-shadow: 0px 1px 2px rgb(0 0 0 / 10%), 0px 2px 4px rgb(0 0 0 / 10%);
+  }
+  .logo-box img {height: 50px;}
+
+  /* body - form */
+  .card-box {
+    width: 500px;
+    margin: auto; margin-top: 90px;
+    background: white;
+    border: none; border-radius: 8px;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 10%), 0 2px 4px rgb(0 0 0 / 10%);
+  }
+  .card-box .head {
+    height: 60px;
+    padding-bottom: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .card-box > .head h2 {
+    margin-top: -15px; padding: 18px 16px 18px 18px;
+    font-size: 20px; line-height: 24px;
+  }
+  .card-box .body {
+    margin: 16px;
+  }
+  .card-box .body td div {
+    margin-bottom: 16px;
+    font-size: 17px; line-height: 20px;
+  }
+  .card-box .body .in-box {
+    width: 444px; height: auto;
+    margin-bottom: 0; padding: 16px 0 16px 16px;
+    border-radius: 6px; border: 1px solid #ccd0d5; outline: none !important;
+    color: #8a8d91; font-size: 16px;
+  }
+  .card-box .body .in-box:focus {outline: none !important;}
+  .card-box .foot {
+    height: 70px;
+    padding-right: 50px; padding: 16px;
+    text-align: right;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .card-box .foot .cancel, .card-box .foot .find {
+    display: inline-block;
+    margin-left: 8px; padding: 0px 20px;
+    border: none; border-radius: 6px;
+    font-size: 15px; line-height: 36px; text-decoration: none; 
+    white-space: no-wrap; cursor: pointer;
+  }
+  .card-box .foot .cancel {background-color: #e4e6eb; color: #4b4f56;}
+  .card-box .foot .find {background-color: #1877f2; color: white;}

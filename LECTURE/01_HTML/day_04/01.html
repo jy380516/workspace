@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM tag</title>
+</head>
+<body>
+
+    <!-- input type attr. -->
+    <div style="height: 50px;"></div>
+    <form action="">
+        <input type="text" name="login_id" placeholder="아이디를 입력해주세요">
+        <input type="password" placeholder="비밀번호를 입력해주세요">
+        <input type="radio" placeholder="type radio">
+        <input type="image" placeholder="type image" src="https://picsum.photos/200">
+        <input type="file" placeholder="type file">
+        <input type="hidden" placeholder="type hidden">
+    </form>
+
+    <!-- button attr. -->
+    <div style="height: 200px;"></div>
+    <form action="">
+        <button type="button">BTN : button</button>
+        <button type="submit">BTN : submit</button>
+        <button type="reset">BTN : reset</button>
+    </form>
+
+    <!-- select & option  -->
+    <div style="height: 200px;"></div>
+    <p>귀하가 자주 이용하는 사이트는 무엇입니까?</p>
+    <form action="">
+        <select name="" id="">
+            <option value="">Naver</option>
+            <option value="">Daum</option>
+            <option value="">Google</option>
+            <option value="">기타</option>
+        </select>
+    </form>
+
+    <!-- textarea -->
+    <div style="height: 200px;"></div>
+    <form action="">
+        <textarea name="" id="" cols="30" rows="10" placeholder="여기에 내용을 입력하세요."></textarea>
+    </form>
+
+    <!-- how to use FORM tag   -->
+    <div style="height: 200px;"></div>
+    <form action="">
+        <div>
+            <label for="ID">ID</label>
+            <input type="text" name="ID" id="txt">
+        </div>
+        <div>
+            <label for="chk">confirm</label>
+            <input type="checkbox" id="chk">
+        </div>
+        <div>
+            <label for="rdo">select</label>
+            <input type="radio" id="rdo">
+        </div>
+    </form>
+
+</body>
+</html>

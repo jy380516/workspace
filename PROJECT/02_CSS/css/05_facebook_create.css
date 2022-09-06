@@ -1,0 +1,119 @@
+    /* reset CSS */
+    * { padding: 0; margin: 0; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+
+    /* basic CSS */
+    body {background-color: #f0f2f5;}
+
+    /* header */
+    /* header framework */
+    header {
+        height: 60px;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.1), 0 1px 2px rgba(0, 0, 0, 0.1) ;
+        background-color: white;
+        position: sticky; top: 0;
+        z-index: 1;
+    }
+    header img { height: 24px; }
+    header > div { height: 100%; }
+    header .head-logo, .head-side {
+        display: flex;
+        position: absolute; top: 0;
+        align-items: center;
+    }
+    /* header .head-logo (left) */
+    header .head-logo {left: 0;}
+    header .head-logo > img {height: 40px; margin-left: 10px;}
+    header .head-logo > input {
+        width:200px; line-height: 40px; 
+        margin-left: 10px; padding: 0 20px;
+        border-radius: 30px; border: none; outline: none;
+        background-color: rgb(240, 240, 240);
+        font-size: 16px;
+    }
+    /* header .head-nav (center) */
+    header .head-nav { display: block; text-align: center; }
+    header .head-nav nav { display: flex; height: 100%; align-items: center; justify-content: center;}
+    header .head-nav .btn-box {
+        position: relative;
+        display: flex; justify-content: center; align-items: center;
+        width: 140px; height: 46px;
+        margin: 0 4px;
+        border-radius: 5px;
+    }
+    header .head-nav .btn-box:hover {
+        background-color: rgb(240, 240, 240);
+        cursor: pointer;
+    }
+    header .head-nav .btn-line {
+        position: absolute; bottom: -5px; 
+        width: 100%; height: 5px;
+        background-color: #1b74e4;
+        display: none;
+    }
+    header .head-nav .btn-box.active > .btn-line {display: block;}
+    /* header .head-side (right) */
+    header .head-side { 
+        right: 0; 
+        padding-right: 20px; 
+        display: flex; justify-content: center; align-items: center;
+    }
+    header .head-side .btn-box { 
+        width: 40px; height: 40px; 
+        margin: 0 5px; 
+        display: flex; justify-content: center; align-items: center; 
+        background-color: rgb(240, 240, 240);
+        border-radius: 30px;
+    }
+    header .head-side .btn-box:hover {
+        background-color: rgb(220, 220, 220);
+        cursor: pointer;
+    }
+    header .head-side img { height: 20px; }
+
+    /* main */
+    /* main framework */
+    section.container {
+        width: 1000px; height: 2000px;
+        margin: 10px auto;
+    }
+    ul.list {
+        list-style: none;
+        display: flex; flex-wrap: wrap;
+    }
+    ul.list li {
+        width: 25%; min-width: 25%;
+        margin: 10px 0; padding: 5px;
+        box-sizing: border-box;
+    }
+    ul.list li .card {
+        position: relative;
+        width: 100%; height: 300px; overflow: hidden;
+        border-radius: 8px; 
+        background-color: white;
+        box-shadow: 1px 2xp rgba(0, 0, 0, .1);
+    }
+    /* detail */
+    .card > img {
+        width: 100%; height: 140px;
+        object-fit: cover; object-position: top;
+    }
+    .card .text {padding: 5px 20px;}
+    .card .text .title {display: block; padding-bottom: 5px; color: black; font-size: 16px;}
+    .card .text .label {display: block; color: gray; font-size: 14px;}
+    .card button {
+        width: 80%; height: 40px;
+        padding: 8px 12px; margin:10px 10% 0 10%;
+        font-weight: bold; font-size: 16px;
+        border: none; border-radius: 5px;
+    }
+    .card button:hover {background-color: aliceblue; cursor: pointer;}
+    /* close btn */
+    .card .btn-box {
+        position: absolute; top: 0; right: 0;
+        display: flex; align-items: center; justify-content: center;
+        width: 30px; height: 30px; border-radius: 30px;
+        margin: 0 5px;
+        background-color: rgba(80, 80, 80, .2);
+    }
+    .card .btn-box > img {height: 16px;}
+    .card .btn-box:hover {background-color: rgba(80, 80, 80, .5); cursor: pointer;}

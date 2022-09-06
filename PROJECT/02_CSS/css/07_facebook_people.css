@@ -1,0 +1,72 @@
+
+main .container.people {width: 1000px; margin: 0 auto;}
+.people .bg-image {
+    position: absolute; top: 0; left: 0;
+    width: 100%; height: 650px;
+    background: linear-gradient(to top, #fff, rgb(255 255 255), rgb(255 255 255/ 70%), rgb(0 0 0/ 60%), rgb(0 0 0/ 10%));
+    box-shadow: 0 1px 2px rgb(0 0 0/ 10%);
+    z-index: -1;
+}
+.people .t-layer .t-img {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0 0 8px 8px;
+}
+.people .t-layer .t-img img {width: 100%;}
+.people .t-layer .t-img .label {
+    position: absolute; bottom: 0;
+    width: 100%;
+    padding: 0 10px;
+    line-height: 40px; color: #fff; font-size: 14px;
+    background-color: #1877f2;
+}
+.people .t-layer .t-title {position: relative; margin-top: 10px;}
+.people .t-layer .t-title .tl h1 {line-height: 40px; font-size: 30px; font-weight: bold;}
+.people .t-layer .t-title .tl span {line-height: 16px; font-size: 14px;}
+.people .t-layer .t-title .tr {
+    position: absolute; bottom: 0; right: 0;
+    display: inline-flex;
+}
+.people .t-layer .t-title .tr .g-btn {
+    display: inline-flex; 
+    align-items: center; justify-content: space-between;
+    height: 30px;
+    padding: 0 10px;
+    background-color: #1877f2;
+    color: #fff;
+    border-radius: 4px; border: 0;
+} 
+.people .t-layer .t-title .tr .g-btn span {margin-left: 10px;}
+.people .t-layer .t-title .tr .g-btn > img {
+    display: inline-block;
+    width: 16px; 
+    object-position: center;
+}
+.people .t-layer .t-title .tr > img, .people .t-layer .t-navi .tr img {
+    display: inline-block; box-sizing: content-box;
+    width: 16px;
+    padding: 6px 18px; margin-left: 10px;
+    border-radius: 4px;
+    background-color: #e5e5e5;
+}
+.people .t-layer .t-navi {
+    display: flex; justify-content: space-between; align-items: center;
+    margin-top: 20px; padding: 5px 0;
+    border-top: 1px solid gray;
+}
+.people .t-layer .t-navi img {width: 20px;}
+.people .t-layer .t-navi .box {
+    display: inline-block; 
+    width: 60px; height: 40px; 
+    line-height: 40px; text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.people .t-layer .t-navi .box:hover {background-color: rgb(230, 230, 230);}
+.people .t-layer .t-navi .box .line {
+    display: block;
+    width: 100%; height: 3px;
+    background-color: #1877f2;
+    visibility: hidden;
+}
+.people .t-layer .t-navi .box.active .line {visibility: visible;}
